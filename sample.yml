@@ -1,0 +1,16 @@
+name: nadeem # string
+age:  # int
+status: on # bool
+weight: 80.94  #float
+
+# primitive data types
+
+numbers : [1, 2, 3, 4]
+
+server:
+  port: 8080
+  hostname: example
+  database: local
+  status: 
+
+  # obj type
