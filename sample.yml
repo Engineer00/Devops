@@ -14,3 +14,86 @@ server:
   status: 
 
   # obj type
+
+  student1 : John
+  hobbies:
+   - music
+   - tennis
+   - pilates
+
+# Flow style Dictionary
+School:
+  - class 1:
+      - student: { age: 14, name: Arbab, grade: A, pass: true }
+      - student: { age: 13, name: Beenish, grade: B, pass: true }
+      - student: { age: 11, name: Cat, grade: C, pass: false }
+  - class 2:
+      #  ... same as above
+  - class 3:
+      # ... same as above
+
+---
+# Block style Dictionary
+School:
+  - class 1:
+    - student:
+      age: 14
+      name: Arbab
+      grade: A
+      pass : true
+    - student:
+      age: 13
+      name: beenish
+      grade: B
+      pass : true
+    - student:
+      age: 11
+      name: Cheema
+      grade: C
+      pass : false
+  - class 2:
+  # ... same like above
+  - class 3: 
+  # ... same like above
+
+---
+# Flow Style Array 
+School: 
+class 1:
+  - [
+      { age: 14, name: Arbab, grade: A, pass: true },
+      { age: 13, name: Beenish, grade: B, pass: true },
+      { age: 11, name: Cheema, grade: C, pass: false }
+    ]
+  - [
+      # ... same for class 2
+    ]
+  - [
+      # ... same for class 3
+    ]
+
+# Block style array
+School:class 1:
+  - - student: { age: 14, name: Arbab, grade: A, pass: true }
+    - student: { age: 13, name: Beenish, grade: B, pass: true }
+    - student: { age: 11, name: Cheema, grade: C, pass: false }
+  - - # ... same for class 2
+  - - # ... same for class 3
+
+
+
+# Block Style Dictionary 
+# Samsung_S22 Specifications
+
+samsung_s22:
+  display: 6.1 inches
+  processor: Snapdragon 8
+  ram: 8GB
+  storage: 128GB
+  camera_rear:
+    main: 50MP
+    ultrawide: 12MP
+  camera_front: 10MP
+  battery: 3700mAh
+  iops: 1000
+
